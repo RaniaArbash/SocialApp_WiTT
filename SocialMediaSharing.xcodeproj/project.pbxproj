@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		218E7FB925FF950E00B0077D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E7FB725FF950E00B0077D /* Main.storyboard */; };
 		218E7FBB25FF951100B0077D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218E7FBA25FF951100B0077D /* Assets.xcassets */; };
 		218E7FBE25FF951100B0077D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E7FBC25FF951100B0077D /* LaunchScreen.storyboard */; };
+		218E7FC725FF97E700B0077D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E7FC625FF97E700B0077D /* Article.swift */; };
+		218E7FF225FFA76A00B0077D /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 218E7FF125FFA76A00B0077D /* FacebookShare */; };
+		218E7FF425FFA76A00B0077D /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 218E7FF325FFA76A00B0077D /* FacebookCore */; };
+		9275D6CBACAD0DEBA3A9B109 /* Pods_SocialMediaSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ECA972A5301D1832AB5528 /* Pods_SocialMediaSharing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BF5333DE252C746CF3DA928 /* Pods-SocialMediaSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaSharing.debug.xcconfig"; path = "Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		12ECA972A5301D1832AB5528 /* Pods_SocialMediaSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E7FAE25FF950E00B0077D /* SocialMediaSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E7FB125FF950E00B0077D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218E7FB325FF950E00B0077D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		218E7FBA25FF951100B0077D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		218E7FBD25FF951100B0077D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		218E7FBF25FF951100B0077D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218E7FC625FF97E700B0077D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		938BC9B0AFC09183166875B3 /* Pods-SocialMediaSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaSharing.release.xcconfig"; path = "Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218E7FF225FFA76A00B0077D /* FacebookShare in Frameworks */,
+				218E7FF425FFA76A00B0077D /* FacebookCore in Frameworks */,
+				9275D6CBACAD0DEBA3A9B109 /* Pods_SocialMediaSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				218E7FB025FF950E00B0077D /* SocialMediaSharing */,
 				218E7FAF25FF950E00B0077D /* Products */,
+				E29BFD8946681264D6A43254 /* Pods */,
+				2802D012B79C948DD5F1C6E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +76,26 @@
 				218E7FBA25FF951100B0077D /* Assets.xcassets */,
 				218E7FBC25FF951100B0077D /* LaunchScreen.storyboard */,
 				218E7FBF25FF951100B0077D /* Info.plist */,
+				218E7FC625FF97E700B0077D /* Article.swift */,
 			);
 			path = SocialMediaSharing;
+			sourceTree = "<group>";
+		};
+		2802D012B79C948DD5F1C6E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12ECA972A5301D1832AB5528 /* Pods_SocialMediaSharing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29BFD8946681264D6A43254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5333DE252C746CF3DA928 /* Pods-SocialMediaSharing.debug.xcconfig */,
+				938BC9B0AFC09183166875B3 /* Pods-SocialMediaSharing.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +105,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 218E7FC225FF951100B0077D /* Build configuration list for PBXNativeTarget "SocialMediaSharing" */;
 			buildPhases = (
+				8B7123C9F9E78FE798C049F9 /* [CP] Check Pods Manifest.lock */,
 				218E7FAA25FF950E00B0077D /* Sources */,
 				218E7FAB25FF950E00B0077D /* Frameworks */,
 				218E7FAC25FF950E00B0077D /* Resources */,
+				AA9DEC7B46F7FDC987827D6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SocialMediaSharing;
+			packageProductDependencies = (
+				218E7FF125FFA76A00B0077D /* FacebookShare */,
+				218E7FF325FFA76A00B0077D /* FacebookCore */,
+			);
 			productName = SocialMediaSharing;
 			productReference = 218E7FAE25FF950E00B0077D /* SocialMediaSharing.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 218E7FA525FF950E00B0077D;
+			packageReferences = (
+				218E7FF025FFA76A00B0077D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 218E7FAF25FF950E00B0077D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,11 +172,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B7123C9F9E78FE798C049F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialMediaSharing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9DEC7B46F7FDC987827D6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialMediaSharing/Pods-SocialMediaSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		218E7FAA25FF950E00B0077D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218E7FC725FF97E700B0077D /* Article.swift in Sources */,
 				218E7FB625FF950E00B0077D /* ViewController.swift in Sources */,
 				218E7FB225FF950E00B0077D /* AppDelegate.swift in Sources */,
 				218E7FB425FF950E00B0077D /* SceneDelegate.swift in Sources */,
@@ -283,10 +366,13 @@
 		};
 		218E7FC325FF951100B0077D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF5333DE252C746CF3DA928 /* Pods-SocialMediaSharing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SocialMediaSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.SocialMediaSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,10 +388,13 @@
 		};
 		218E7FC425FF951100B0077D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938BC9B0AFC09183166875B3 /* Pods-SocialMediaSharing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SocialMediaSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.humber.SocialMediaSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +430,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		218E7FF025FFA76A00B0077D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		218E7FF125FFA76A00B0077D /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 218E7FF025FFA76A00B0077D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		218E7FF325FFA76A00B0077D /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 218E7FF025FFA76A00B0077D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 218E7FA625FF950E00B0077D /* Project object */;
 }
